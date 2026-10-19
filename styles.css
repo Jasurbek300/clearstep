@@ -1147,3 +1147,14 @@ details.sec>.stack{padding-bottom:1rem}
 /* Long option texts must not widen the page (no horizontal scroll on small screens) */
 .field, .page-header > * { min-width: 0; max-width: 100%; }
 select.input { width: 100%; max-width: 100%; text-overflow: ellipsis; }
+
+/* ---- Math rendering (math-render.js): stacked fractions, radicals, powers ---- */
+.cs-frac{display:inline-flex;flex-direction:column;align-items:center;vertical-align:-.45em;line-height:1.2;margin:0 .14em;text-align:center;font-size:.92em}
+.cs-frac .cs-num{border-bottom:1.4px solid currentColor;padding:0 .28em}
+.cs-frac .cs-den{padding:0 .28em}
+.cs-rad{display:inline-flex;align-items:stretch;line-height:1.2;margin:0 .1em;vertical-align:-.05em}
+.cs-rad-v{font-size:1.2em;line-height:1;align-self:flex-end}
+.cs-rad-c{border-top:1.4px solid currentColor;padding:0 .18em}
+sup,sub{font-size:.72em;line-height:0}
+sup{vertical-align:.5em}
+sub{vertical-align:-.2em}
